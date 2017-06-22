@@ -7,12 +7,12 @@ function clozeCard(clozeDelet, clozePart, clozeFull) {
 }
 
 var one = new clozeCard(
-    "ostrich", "... is the fastest bird on foot" , "ostrich is the fastest bird on foot"
+    "ostrich", "... is the fastest bird on foot" , "Ostrich is the fastest bird on foot"
 );
     //delete - part - full
 
 var two = new clozeCard(
-    "mercury" , "... planet is closest to the sun" , "Mercury planet is closest to the sun"
+    "mercury" , "... is the planet that is closest to the sun" , "Mercury is the planet that is closest to the sun"
 );
 
 var three = new clozeCard(
@@ -36,11 +36,11 @@ var seven = new clozeCard(
 );
 
 var eight = new clozeCard(
-    "september" , "In the northern hemisphere, ... month is the autumnal equinox" , "In the northern hemisphere, September month is the autumnal equinox"
+    "september" , "In the northern hemisphere, ... is the month that is the start of the autumnal equinox" , "In the northern hemisphere, September is the month that is the start of the autumnal equinox"
 );
 
 var nine = new clozeCard(
-    "7" , "Emma has 2-yard sticks. She also has a 12-inch ruler. She laid them end-to-end in a line. it was ... feet long in a line" , "Emma has 2-yard sticks. She also has a 12-inch ruler. She laid them end-to-end in a line. it was 7 feet long in a line"
+    "7" , "Emma has 2-yard sticks. She also has a 12-inch ruler. She laid them end-to-end in a line. it was ... feet long in a line" , "Emma has a 7 feet long line"
 );
 
 var ten = new clozeCard(
@@ -110,13 +110,13 @@ inquirer.prompt ([{
     if(inquirer.userAnswer2 === two.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer2 + " - Wrong, Correct Anwser is the " + two.clozeFull);
+        console.log(inquirer.userAnswer2 + " - Wrong, Correct Anwser is " + two.clozeFull);
     }
 
     if(inquirer.userAnswer3 === three.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer3 + " - Wrong, Correct Anwser is the " + three.clozeFull);
+        console.log(inquirer.userAnswer3 + " - Wrong, Correct Anwser is " + three.clozeFull);
     }
 
     if(inquirer.userAnswer4 === four.clozeDelet) {
@@ -128,43 +128,43 @@ inquirer.prompt ([{
     if(inquirer.userAnswer5 === five.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer5 + " - Wrong, Correct Anwser is the " + five.clozeFull);
+        console.log(inquirer.userAnswer5 + " - Wrong, Correct Anwser is " + five.clozeFull);
     }
 
     if(inquirer.userAnswer6 === six.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer6 + " - Wrong, Correct Anwser is the " + six.clozeFull);
+        console.log(inquirer.userAnswer6 + " - Wrong, Correct Anwser is " + six.clozeFull);
     }
 
     if(inquirer.userAnswer7 === seven.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer7 + " - Wrong, Correct Anwser is the " + seven.clozeFull);
+        console.log(inquirer.userAnswer7 + " - Wrong, Correct Anwser is " + seven.clozeFull);
     }
 
     if(inquirer.userAnswer8 === eight.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer8 + " - Wrong, Correct Anwser is the " + eight.clozeFull);
+        console.log(inquirer.userAnswer8 + " - Wrong, Correct Anwser is " + eight.clozeFull);
     }
 
     if(inquirer.userAnswer9 === nine.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer9 + " - Wrong, Correct Anwser is the " + nine.clozeFull);
+        console.log(inquirer.userAnswer9 + " - Wrong, Correct Anwser is " + nine.clozeFull);
     }
 
     if(inquirer.userAnswer10 === ten.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer10 + " - Wrong, Correct Anwser is the " + ten.clozeFull);
+        console.log(inquirer.userAnswer10 + " - Wrong, Correct Anwser is " + ten.clozeFull);
     }
 
     if(inquirer.userAnswer11 === eleven.clozeDelet) {
         console.log("Correct");
     } else {
-        console.log(inquirer.userAnswer11 + " - Wrong, Correct Anwser is the " + eleven.clozeFull);
+        console.log(inquirer.userAnswer11 + " - Wrong, Correct Anwser is " + eleven.clozeFull);
     }
 
 });

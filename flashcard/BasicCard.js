@@ -3,7 +3,7 @@ var inquirer = require("inquirer");
 function basicCard(question, answer) {
     this.question = question;
     this.answer = answer;
-}
+}//changed name to make more sense
 
 var questionOne = new basicCard(
     "What is the fastest bird on foot?" , "ostrich"
@@ -15,7 +15,7 @@ var questionOne = new basicCard(
 var questionTwo = new basicCard(
     "What planet is closest to the sun?" , "mercury"
 );
-//console.log(questionTwo.front);
+//console.log(questionTwo.front); did this at one point
 //console.log(questionTwo.back);
 
 var questionThree = new basicCard(
@@ -24,10 +24,6 @@ var questionThree = new basicCard(
 
 var questionFour = new basicCard(
     "How long is one regular term for a U.S. Representative?" , "2"
-);
-
-var questionFive = new basicCard(
-    "What is the lowest prime number?" , "2"
 );
 
 var questionFive = new basicCard(
@@ -52,6 +48,10 @@ var questionNine = new basicCard(
 
 var questionTen = new basicCard(
     "What state is the Grand Canyon in?" , "arizona"
+);
+
+var questionEleven = new basicCard(
+    "What is the lowest prime number?" , "2"
 );
 
 
@@ -96,7 +96,12 @@ inquirer.prompt ([{
     type: "input",
     message: questionTen.question,
     name: "userAnswer10"
+}, {
+    type: "input",
+    message: questionEleven.question,
+    name: "userAnswer11"
 }
+
 
 ]).then(function(inquirer){
     if(inquirer.userAnswer1 === questionOne.answer) {
@@ -159,4 +164,9 @@ inquirer.prompt ([{
         console.log(inquirer.userAnswer10 + " - Wrong, Correct Anwser is " + questionTen.answer);
     }
 
+    if(inquirer.userAnswer11 === questionEleven.answer) {
+        console.log("Correct");
+    } else {
+        console.log(inquirer.userAnswer11 + " - Wrong, Correct Anwser is " + questionEleven.answer);
+    }
 });
